@@ -63,22 +63,6 @@
       "email": "Sherwood@rosamond.me",
       "phone": "(12) 3121-4151",
       "avatar": "https://randomuser.me/api/portraits/men/85.jpg"
-    },
-    {
-      "id": 9,
-      "name": "Glenna Reichert",
-      "username": "Glenna",
-      "email": "Chaim_McDermott@dana.io",
-      "phone": "(12) 3112-4115",
-      "avatar": "https://randomuser.me/api/portraits/women/28.jpg"
-    },
-    {
-      "id": 10,
-      "name": "Clementina DuBuque",
-      "username": "DuBuque",
-      "email": "Rey.Padberg@karina.biz",
-      "phone": "(27) 2887-4185",
-      "avatar": "https://randomuser.me/api/portraits/women/20.jpg"
     }
   ]
 }
