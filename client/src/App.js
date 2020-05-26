@@ -4,6 +4,7 @@ import './App.css';
 import './index.css';
 import ListaClientes from './componentes/ListaClientes'
 import AdicionarCliente from './componentes/AdicionarCliente'
+import RemoverCliente from './componentes/RemoverCliente'
 
 class App extends Component{
   render(){
@@ -11,6 +12,7 @@ class App extends Component{
       <div className="App">
         <ListaClientes />
         <AdicionarCliente />
+        <RemoverCliente />
       </div>
     )
   }

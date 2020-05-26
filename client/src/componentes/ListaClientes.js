@@ -28,8 +28,7 @@ class ListaClientes extends Component {
 		return (
             <div className="listaClientes">
                 <ul>
-                {clientes.map(clientes => <div key={clientes.id}><img src={clientes.avatar}/> {clientes.name} | {clientes.username} | {clientes.email} | {clientes.phone}</div>)}
-
+                {clientes.map(clientes => <div key={clientes.id}><img src={clientes.avatar} className="imgListaClientes"/> {clientes.name} - {clientes.username} - {clientes.email} - {clientes.phone}</div>)}
                 </ul>
             </div>
 		)

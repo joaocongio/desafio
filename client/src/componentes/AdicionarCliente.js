@@ -23,6 +23,7 @@ class AdicionarCliente extends Component{
     submitHandler = cliente => {
       cliente.preventDefault()
       console.log(this.state)
+      window.location.reload(false);
       axios.post('http://localhost:9004/users', this.state)
         .then(response =>{
           console.log(response)
@@ -35,27 +36,28 @@ class AdicionarCliente extends Component{
     render(){
       const { id, name, username, email, phone, avatar} = this.state
       return(
+        
         <div className="adicionarClientes">
+          <h2>Adicionar novo Cliente</h2>
           <form onSubmit={this.submitHandler}>
             <div>
-              <label>Nome: </label>
-              <input type="text" name="name" value={name} onChange={this.changeHandler}/>
+              <label>Nome: </label><br />
+              <input type="text" name="name" value={name} onChange={this.changeHandler} placeholder="Nome Completo" required/>
             </div>
             <div>
-            <label>Usuário: </label>
-              <input type="text" name="username" value={username}  onChange={this.changeHandler}/>
+            <label>Usuário: </label><br />
+              <input type="text" name="username" value={username}  onChange={this.changeHandler} placeholder="Usuário" required/>
             </div>
             <div>
-            <label>E-mail: </label>
-              <input type="text" name="email" value={email}  onChange={this.changeHandler}/>
+            <label>E-mail: </label><br />
+              <input type="text" name="email" value={email}  onChange={this.changeHandler} placeholder="email@email.com" required/>
             </div>
             <div>
-            <label>Telefone: </label>
-              <input type="text" name="phone" value={phone}  onChange={this.changeHandler}/>
+            <label>Telefone: </label><br />
+              <input type="text" name="phone" value={phone}  onChange={this.changeHandler} placeholder="(xx) xxxxx-xxxx" required/>
             </div>
             <button type="submit">Adicionar</button>
           </form>
-          
         </div>
       )
     }
