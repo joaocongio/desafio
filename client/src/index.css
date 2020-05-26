@@ -1,3 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,17 +19,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/** DEFAULT **/
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-/** FIM DEFAULT **/
 
-/** MENU **/
+.App{
+  position: relative;
+  width: 100%;
+}
+
 .menu{
   width: 100%;
   height: 40px;
@@ -47,14 +50,6 @@ code {
   display: block;
 }
 
-/** FIM MENU **/
-
-.App{
-  position: relative;
-  width: 100%;
-}
-
-/** LISTAR CLIENTES **/
 .listaClientes{
   float: left;
   text-align: left;
@@ -66,12 +61,27 @@ code {
   max-width: 70px;
 }
 
-/** FIM LISTAR CLIENTES **/
+.removerCliente input{
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.removerCliente{
+  float: right;
+}
+
 
 .adicionarClientes{
   float: right;
   margin-bottom: 20px;
 }
+
+.adicionarClientes input{
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+/** DEFAULT: FORMULÁRIO ADICIONAR CLIENTE E REMOVER CLIENTE **/
 
 button{
   margin: 7px 0 0 0;
@@ -84,23 +94,18 @@ button{
   color: #fff;
   font-weight: 600;
   width: 150px;
+  letter-spacing: 0.06em;
 }
 
 label {
   font-weight: 600;
 }
 
-.removerCliente input{
-  border: none;
-  border-bottom: 1px solid gray;
-}
-.removerCliente{
-  float: right;
-}
-
 h2{
   padding: 0 0 10px 0;
 }
+
+/** FIM FORMULARIOS **/
 
 @media only screen and (max-width: 1366px){
   .adicionarClientes, .removerCliente{
