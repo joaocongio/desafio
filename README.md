@@ -49,11 +49,6 @@ Os arquivos dentro da pasta **componente** são eles:
 - <code>ListaClientes.js</code>: Responsável por listar os cliente. GET
 - <code>RemoverCliente.js</code>: Responsável por excluir um cliente. DELETE<br/>
 
-Entrando dentro da pasta **client/src/componentes**, possui os arquivos:<br/>
-- <code>AdicionarCliente.js</code>
-- <code>ListaClientes.js</code>
-- <code>RemoverCliente.js</code><br/>
-
 Eles são os responsáveis por realizar as operações de GET, POST e PUT, sendo o cerebro do projeto. Conforme mecionado no início, foi utilizado Axios para realizar as requisições HTTP.<br/>
 
 **Obs:** Não se esqueça de importar o <code>Axios</code> nestes arquivos.<br/>
